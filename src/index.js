@@ -5,7 +5,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux';
 
-function reducer(state, action) {
+const initialState = {
+    count: 0
+};
+
+function reducer(state = initialState, action) {
     console.log('reducer', state, action);
     return state;
 }
